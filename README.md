@@ -4,7 +4,7 @@
 
 AEON is the first AGI-native infrastructure combining autonomous agent orchestration with post-quantum homomorphic encryption for trustless, self-optimizing computation at scale.
 
-This is a Framer-inspired marketing website built with pure HTML, CSS, and vanilla JavaScript—no frameworks, no build tools.
+This repository contains the official AEON Protocol website, built with pure HTML, CSS, and vanilla JavaScript—no frameworks, no build tools.
 
 ## 🌟 Features
 
@@ -89,7 +89,7 @@ php -S localhost:8000
 
 ## 📄 License
 
-This is a concept/demo project. Use freely for inspiration or learning.
+© 2025 AEON Protocol. All rights reserved.
 
 ## 🔬 Technology
 
