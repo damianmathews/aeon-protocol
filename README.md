@@ -1,6 +1,6 @@
 # AEON Protocol
 
-**Agentic Enctription Optimization Network**
+**Agentic Encryption Optimization Network**
 
 A Framer-inspired marketing website for a deep-tech AI protocol concept. Built with pure HTML, CSS, and vanilla JavaScript—no frameworks, no build tools.
 
