@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEON – Agentic Enctription Optimization Network</title>
+    <meta name="description" content="A flowing compute fabric for private, self-optimizing AI agents. AEON coordinates agentic intelligence through ephemeral secrecy and optimization.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AEON – Agentic Enctription Optimization Network">
+    <meta property="og:description" content="A flowing compute fabric for private, self-optimizing AI agents.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg width='1200' height='630' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%237C5CFF'/%3E%3Cstop offset='100%25' style='stop-color:%2344FFD1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='1200' height='630' fill='%230B0F14'/%3E%3Ctext x='600' y='315' font-family='sans-serif' font-size='72' font-weight='700' fill='url(%23g)' text-anchor='middle'%3EAEON%3C/text%3E%3C/svg%3E">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AEON – Agentic Enctription Optimization Network">
+    <meta name="twitter:description" content="A flowing compute fabric for private, self-optimizing AI agents.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='f' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%237C5CFF'/%3E%3Cstop offset='100%25' style='stop-color:%2344FFD1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='50' y='70' font-family='serif' font-size='60' font-weight='700' fill='url(%23f)' text-anchor='middle'%3EÆ%3C/text%3E%3C/svg%3E">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav id="nav" class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner wrap">
+            <a href="#hero" class="logo" aria-label="AEON home">
+                <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#7C5CFF"/>
+                            <stop offset="100%" style="stop-color:#44FFD1"/>
+                        </linearGradient>
+                    </defs>
+                    <text x="0" y="24" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="url(#logo-gradient)" letter-spacing="-0.02em">AEON</text>
+                </svg>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#how" class="nav-link">How it Works</a>
+                <a href="#protocol" class="nav-link">Protocol</a>
+                <a href="#token" class="nav-link">Token</a>
+                <a href="#roadmap" class="nav-link">Roadmap</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#" class="btn btn-primary btn-small">Mint $AEON</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+            <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+            <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+            <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+            <svg class="hero-line" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M 0 400 Q 300 200, 600 400 T 1200 400" stroke="url(#line-gradient)" stroke-width="1.5" fill="none" opacity="0.3"/>
+                <defs>
+                    <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#7C5CFF;stop-opacity:0"/>
+                        <stop offset="50%" style="stop-color:#44FFD1;stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:#7C5CFF;stop-opacity:0"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <div class="hero-content wrap">
+                <div class="hero-inner">
+                    <h1 class="hero-title reveal">
+                        Agentic Enctription<br>Optimization Network
+                    </h1>
+                    <p class="hero-subtitle reveal">
+                        A flowing compute fabric for private, self‑optimizing AI agents.
+                    </p>
+                    <div class="hero-buttons reveal" data-magnetic-container>
+                        <a href="#" class="btn btn-primary" data-magnetic>Mint $AEON</a>
+                        <a href="#" class="btn btn-secondary" data-magnetic>Read Litepaper <span class="badge">soon</span></a>
+                        <a href="#" class="btn btn-ghost" data-magnetic>Follow on X</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marquee" aria-hidden="true">
+                <div class="marquee-content">
+                    <span>Agentic</span>
+                    <span class="marquee-dot">•</span>
+                    <span>Enctription</span>
+                    <span class="marquee-dot">•</span>
+                    <span>Optimization</span>
+                    <span class="marquee-dot">•</span>
+                    <span>Network</span>
+                    <span class="marquee-dot">•</span>
+                    <span>Agentic</span>
+                    <span class="marquee-dot">•</span>
+                    <span>Enctription</span>
+                    <span class="marquee-dot">•</span>
+                    <span>Optimization</span>
+                    <span class="marquee-dot">•</span>
+                    <span>Network</span>
+                    <span class="marquee-dot">•</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section section-about">
+            <div class="wrap">
+                <div class="section-kicker reveal">Introduction</div>
+                <h2 class="section-title reveal">What is AEON?</h2>
+                <div class="about-grid">
+                    <div class="about-content reveal">
+                        <p class="lead-text">
+                            AEON is a minimal, lore‑forward protocol concept where agents act autonomously, enctription preserves ephemeral secrecy, optimization selects the best routes for cost and latency, and the network coordinates receipts and reputation. It's a story about where intelligent systems might flow next.
+                        </p>
+                        <ul class="feature-list">
+                            <li>
+                                <strong>Agentic:</strong> self‑directed micro‑operations across nodes.
+                            </li>
+                            <li>
+                                <strong>Enctription:</strong> post‑quantum‑minded, ephemeral secrecy primitives.
+                            </li>
+                            <li>
+                                <strong>Optimization:</strong> real‑time route selection for tasks, latency, and cost.
+                            </li>
+                            <li>
+                                <strong>Network:</strong> off‑chain execution, on‑chain settlement optional.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-card reveal">
+                        <div class="glass">
+                            <div class="code-label">ROUTE_SPEC</div>
+                            <pre class="code-block"><code>{
+  agent_id: "0xA3F9...",
+  policy: {
+    max_latency: "150ms",
+    min_attestations: 3,
+    cost_ceiling: 0.02
+  },
+  enctription: "ephemeral",
+  optimization_vector: [
+    "latency", "cost", "reputation"
+  ],
+  settlement: "optional"
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how" class="section section-how">
+            <div class="wrap">
+                <div class="section-kicker reveal">Process</div>
+                <h2 class="section-title reveal">Flow of Intelligence</h2>
+                <div class="flow-steps">
+                    <div class="flow-connector" aria-hidden="true"></div>
+
+                    <div class="flow-step reveal" data-tilt>
+                        <div class="flow-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" stroke="url(#step1-gradient)" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="8" fill="url(#step1-gradient)"/>
+                                <defs>
+                                    <linearGradient id="step1-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#7C5CFF"/>
+                                        <stop offset="100%" style="stop-color:#44FFD1"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="flow-title">Spawn Agent</h3>
+                        <p class="flow-text">Define identity, scope, and policy.</p>
+                    </div>
+
+                    <div class="flow-step reveal" data-tilt>
+                        <div class="flow-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8" y="8" width="32" height="32" rx="4" stroke="url(#step2-gradient)" stroke-width="2"/>
+                                <path d="M16 24 L24 16 L32 24 L24 32 Z" fill="url(#step2-gradient)"/>
+                                <defs>
+                                    <linearGradient id="step2-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#44FFD1"/>
+                                        <stop offset="100%" style="stop-color:#7C5CFF"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="flow-title">Enctription Pipeline</h3>
+                        <p class="flow-text">Encode, shard, attest; vanish on verify.</p>
+                    </div>
+
+                    <div class="flow-step reveal" data-tilt>
+                        <div class="flow-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4 L44 24 L24 44 L4 24 Z" stroke="url(#step3-gradient)" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="6" fill="url(#step3-gradient)"/>
+                                <defs>
+                                    <linearGradient id="step3-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#FF4D8F"/>
+                                        <stop offset="100%" style="stop-color:#7C5CFF"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="flow-title">Optimization Market</h3>
+                        <p class="flow-text">Routes bid compute, bandwidth, and time.</p>
+                    </div>
+
+                    <div class="flow-step reveal" data-tilt>
+                        <div class="flow-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 12 L40 12 L36 36 L12 36 Z" stroke="url(#step4-gradient)" stroke-width="2"/>
+                                <line x1="16" y1="20" x2="32" y2="20" stroke="url(#step4-gradient)" stroke-width="2"/>
+                                <line x1="16" y1="28" x2="28" y2="28" stroke="url(#step4-gradient)" stroke-width="2"/>
+                                <defs>
+                                    <linearGradient id="step4-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#44FFD1"/>
+                                        <stop offset="100%" style="stop-color:#FF4D8F"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="flow-title">Settlement</h3>
+                        <p class="flow-text">Optional on‑chain receipt and reputation delta.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protocol Section -->
+        <section id="protocol" class="section section-protocol">
+            <div class="wrap">
+                <div class="section-kicker reveal">Architecture</div>
+                <h2 class="section-title reveal">Protocol Primitives</h2>
+                <div class="protocol-grid">
+                    <div class="protocol-card reveal" data-tilt tabindex="0">
+                        <div class="protocol-label">AR</div>
+                        <h3 class="protocol-title">Agentic Runtime</h3>
+                        <p class="protocol-text">Policy‑driven micro‑ops with bounded autonomy.</p>
+                        <div class="protocol-expand">
+                            <p>The Agentic Runtime provides a sandboxed execution environment where agents operate under strict policy constraints, enabling autonomous decision-making within predefined boundaries and risk parameters.</p>
+                        </div>
+                    </div>
+
+                    <div class="protocol-card reveal" data-tilt tabindex="0">
+                        <div class="protocol-label">EL</div>
+                        <h3 class="protocol-title">Enctription Layer</h3>
+                        <p class="protocol-text">Ephemeral secrecy; attestations without exposure.</p>
+                        <div class="protocol-expand">
+                            <p>The Enctription Layer implements zero-knowledge attestation mechanisms and ephemeral encryption schemes, ensuring data secrecy throughout the computation lifecycle without ever exposing raw inputs.</p>
+                        </div>
+                    </div>
+
+                    <div class="protocol-card reveal" data-tilt tabindex="0">
+                        <div class="protocol-label">OG</div>
+                        <h3 class="protocol-title">Optimization Graph</h3>
+                        <p class="protocol-text">Multi‑vector route selection across cost/latency/risk.</p>
+                        <div class="protocol-expand">
+                            <p>The Optimization Graph maintains a dynamic topology of compute routes, continuously evaluating trade-offs between cost, latency, bandwidth, and reputation to select optimal execution paths in real-time.</p>
+                        </div>
+                    </div>
+
+                    <div class="protocol-card reveal" data-tilt tabindex="0">
+                        <div class="protocol-label">NF</div>
+                        <h3 class="protocol-title">Network Fabric</h3>
+                        <p class="protocol-text">Transport primitives, quorums, and receipt channels.</p>
+                        <div class="protocol-expand">
+                            <p>The Network Fabric coordinates message passing, consensus formation, and receipt generation across distributed nodes, providing the foundational infrastructure for reliable off-chain execution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Token Section -->
+        <section id="token" class="section section-token">
+            <div class="wrap">
+                <div class="section-kicker reveal">Economy</div>
+                <h2 class="section-title reveal">$AEON Token</h2>
+                <div class="token-grid">
+                    <div class="token-col reveal">
+                        <h3 class="token-subtitle">Why the coin exists</h3>
+                        <p class="token-text">
+                            $AEON exists to coordinate community lore, incentives, and experiments around agentic, privacy‑minded intelligence flows.
+                        </p>
+                    </div>
+                    <div class="token-col reveal">
+                        <h3 class="token-subtitle">Launch details</h3>
+                        <dl class="token-specs">
+                            <div class="token-spec">
+                                <dt>Ticker</dt>
+                                <dd class="mono">AEON</dd>
+                            </div>
+                            <div class="token-spec">
+                                <dt>Chain</dt>
+                                <dd class="mono">Solana</dd>
+                            </div>
+                            <div class="token-spec">
+                                <dt>Supply</dt>
+                                <dd class="mono">1,000,000,000</dd>
+                            </div>
+                            <div class="token-spec">
+                                <dt>Contract</dt>
+                                <dd class="mono">TBA</dd>
+                            </div>
+                            <div class="token-spec">
+                                <dt>Mint</dt>
+                                <dd><a href="#" class="token-link">Pump.fun ↗</a></dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                <div class="disclaimer reveal">
+                    <strong>Disclaimer:</strong> $AEON is a memecoin with no intrinsic value or expectation of profit. This site is for entertainment and community experimentation only.
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section id="roadmap" class="section section-roadmap">
+            <div class="wrap">
+                <div class="section-kicker reveal">Timeline</div>
+                <h2 class="section-title reveal">Roadmap</h2>
+                <div class="timeline">
+                    <div class="timeline-progress" aria-hidden="true"></div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Phase 0 — Lore</h3>
+                            <p class="timeline-text">Naming, site, X presence.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Phase 1 — Signals</h3>
+                            <p class="timeline-text">Community drops, agent demos, litepaper.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Phase 2 — Fabric</h3>
+                            <p class="timeline-text">Prototype routes, receipts, reputation sketch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section section-faq">
+            <div class="wrap">
+                <div class="section-kicker reveal">Questions</div>
+                <h2 class="section-title reveal">FAQ</h2>
+                <div class="faq-list">
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What does "Enctription" mean?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our invented term for ephemeral secrecy primitives and attestations that don't expose raw data.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is AEON real infrastructure?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>AEON is a concept‑first, community‑driven experiment. Treat it as lore until code ships.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Why a memecoin?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Memes coordinate attention. Attention coordinates experiments.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Where can I get $AEON?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Placeholder: Pump.fun mint page.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is there a litepaper?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Coming soon; subscribe or follow on X.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Risks?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Extreme volatility. No promises, no roadmap guarantees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="wrap">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="footer-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#7C5CFF"/>
+                                <stop offset="100%" style="stop-color:#44FFD1"/>
+                            </linearGradient>
+                        </defs>
+                        <text x="0" y="24" font-family="Inter, sans-serif" font-size="24" font-weight="800" fill="url(#footer-logo-gradient)" letter-spacing="-0.02em">AEON</text>
+                    </svg>
+                    <p class="footer-tagline">Flowing intelligence for private agents.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Protocol</h4>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#how" class="footer-link">How it Works</a>
+                        <a href="#protocol" class="footer-link">Primitives</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Community</h4>
+                        <a href="#token" class="footer-link">Token</a>
+                        <a href="#roadmap" class="footer-link">Roadmap</a>
+                        <a href="#faq" class="footer-link">FAQ</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Social</h4>
+                        <a href="#" class="footer-link">X (Twitter) ↗</a>
+                        <a href="#" class="footer-link">Telegram ↗</a>
+                        <a href="#" class="footer-link">Discord ↗</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-legal">© 2025 AEON. Experimental protocol concept. No guarantees. Entertainment only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
