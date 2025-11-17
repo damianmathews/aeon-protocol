@@ -271,7 +271,7 @@ body {
   position: absolute;
   border-radius: 50%;
   filter: var(--blur-hero);
-  opacity: 0.4;
+  opacity: 0.2;
   z-index: 1;
   pointer-events: none;
 }
