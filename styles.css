@@ -5,15 +5,15 @@
 
 /* CSS Variables */
 :root {
-  /* Colors - Yellow/Grey/Black Theme */
+  /* Colors - Yellow/Orange/Black Theme */
   --color-bg: #0A0A0A;
   --color-fg: #E8E8E8;
   --color-yellow: #FFD700;
   --color-yellow-bright: #FDB813;
   --color-yellow-dark: #B8860B;
-  --color-grey: #808080;
-  --color-grey-dark: #2A2A2A;
-  --color-grey-light: #D3D3D3;
+  --color-orange: #FF8C00;
+  --color-orange-bright: #FFA500;
+  --color-orange-dark: #FF6B00;
   --color-black: #000000;
   --color-line: #1A1A1A;
   --color-muted: rgba(232, 232, 232, 0.6);
@@ -171,7 +171,7 @@ body {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--color-yellow), var(--color-grey));
+  background: linear-gradient(90deg, var(--color-yellow), var(--color-orange));
 }
 
 /* Buttons */
@@ -206,7 +206,7 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-yellow), var(--color-grey));
+  background: linear-gradient(135deg, var(--color-yellow), var(--color-orange));
   color: white;
   box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
 }
@@ -280,7 +280,7 @@ body {
 .hero-orb-2 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, var(--color-grey), transparent);
+  background: radial-gradient(circle, var(--color-orange), transparent);
   bottom: -150px;
   right: -100px;
   animation: float 25s ease-in-out infinite reverse;
@@ -473,7 +473,7 @@ body {
   top: 0.5rem;
   width: 6px;
   height: 6px;
-  background: linear-gradient(135deg, var(--color-yellow), var(--color-grey));
+  background: linear-gradient(135deg, var(--color-yellow), var(--color-orange));
   border-radius: 50%;
 }
 
@@ -494,7 +494,7 @@ body {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   text-transform: uppercase;
-  color: var(--color-grey);
+  color: var(--color-orange);
   margin-bottom: 1rem;
   letter-spacing: 0.1em;
 }
@@ -524,7 +524,7 @@ body {
   height: 2px;
   background: linear-gradient(90deg,
     var(--color-yellow) 0%,
-    var(--color-grey) 50%,
+    var(--color-orange) 50%,
     var(--color-yellow-bright) 100%
   );
   opacity: 0.3;
@@ -599,7 +599,7 @@ body {
   font-size: 0.875rem;
   font-weight: 700;
   padding: 4px 12px;
-  background: linear-gradient(135deg, var(--color-yellow), var(--color-grey));
+  background: linear-gradient(135deg, var(--color-yellow), var(--color-orange));
   color: white;
   border-radius: 6px;
   margin-bottom: 1rem;
@@ -687,7 +687,7 @@ body {
 }
 
 .token-link:hover {
-  color: var(--color-grey);
+  color: var(--color-orange);
 }
 
 .disclaimer {
@@ -718,7 +718,7 @@ body {
   top: 0;
   width: 2px;
   height: 0;
-  background: linear-gradient(180deg, var(--color-yellow), var(--color-grey));
+  background: linear-gradient(180deg, var(--color-yellow), var(--color-orange));
   transition: height 0.3s var(--ease-smooth);
 }
 
