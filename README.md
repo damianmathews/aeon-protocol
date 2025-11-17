@@ -2,7 +2,9 @@
 
 **Agentic Encryption Optimization Network**
 
-A Framer-inspired marketing website for a deep-tech AI protocol concept. Built with pure HTML, CSS, and vanilla JavaScript—no frameworks, no build tools.
+AEON is the first AGI-native infrastructure combining autonomous agent orchestration with post-quantum homomorphic encryption for trustless, self-optimizing computation at scale.
+
+This is a Framer-inspired marketing website built with pure HTML, CSS, and vanilla JavaScript—no frameworks, no build tools.
 
 ## 🌟 Features
 
@@ -89,9 +91,16 @@ php -S localhost:8000
 
 This is a concept/demo project. Use freely for inspiration or learning.
 
-## ⚠️ Disclaimer
+## 🔬 Technology
 
-AEON is a fictional protocol concept created for demonstration purposes. The $AEON token mentioned is a memecoin concept with no intrinsic value. This site is for entertainment and educational purposes only.
+AEON represents a breakthrough in decentralized AGI infrastructure by combining:
+
+- **Homomorphic Encryption**: Zero-knowledge computation over encrypted data using lattice-based, post-quantum cryptography
+- **Agentic Runtime**: Self-modifying agents with recursive improvement, meta-learning, and formal verification
+- **Dynamic Optimization**: Multi-objective route selection using reinforcement learning across cost, latency, and reputation
+- **Decentralized Coordination**: Byzantine fault-tolerant consensus with verifiable computation and economic incentives
+
+The protocol enables AGI systems to operate autonomously while maintaining cryptographic privacy guarantees, eliminating the need for centralized trust.
 
 ---
 
