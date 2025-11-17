@@ -139,7 +139,7 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   transition: opacity 0.2s;
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .logo-image {
-  height: 32px;
+  height: 38px;
   width: auto;
   display: block;
 }
@@ -846,7 +846,7 @@ body {
 .footer-logo-container {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 .footer-tagline {
