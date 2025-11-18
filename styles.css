@@ -666,6 +666,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .token-spec {
@@ -676,6 +677,66 @@ body {
   background: rgba(24, 32, 43, 0.4);
   border: 1px solid var(--color-line);
   border-radius: 8px;
+}
+
+/* Contract Address Section */
+.ca-container {
+  margin-bottom: 2rem;
+}
+
+.ca-box {
+  background: rgba(24, 32, 43, 0.6);
+  border: 2px solid var(--color-yellow);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.ca-code {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-yellow);
+  word-break: break-all;
+  display: block;
+  line-height: 1.6;
+}
+
+.btn-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-yellow);
+  color: var(--color-black);
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-smooth);
+}
+
+.btn-copy:hover {
+  background: var(--color-yellow-bright);
+  transform: translateY(-2px);
+}
+
+.btn-copy:active {
+  transform: translateY(0);
+}
+
+.btn-copy svg {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-copy.copied {
+  background: #4CAF50;
+}
+
+.btn-copy.copied .btn-copy-text::after {
+  content: 'ed!';
 }
 
 .token-spec dt {

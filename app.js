@@ -370,6 +370,44 @@
   }
 
   /* ==========================================
+     Copy Contract Address
+     ========================================== */
+
+  const copyButton = document.getElementById('copyButton');
+  const contractAddress = document.getElementById('contractAddress');
+
+  if (copyButton && contractAddress) {
+    copyButton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(contractAddress.textContent);
+
+        // Add copied state
+        copyButton.classList.add('copied');
+
+        // Reset after 2 seconds
+        setTimeout(() => {
+          copyButton.classList.remove('copied');
+        }, 2000);
+      } catch (err) {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = contractAddress.textContent;
+        textArea.style.position = 'fixed';
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+
+        copyButton.classList.add('copied');
+        setTimeout(() => {
+          copyButton.classList.remove('copied');
+        }, 2000);
+      }
+    });
+  }
+
+  /* ==========================================
      Initialize
      ========================================== */
 
